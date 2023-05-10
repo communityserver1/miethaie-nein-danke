@@ -3,7 +3,6 @@ html {
 }
 
 body {
-	/* margin: 0px; */
 	background-color: #edece8;
 	color: #006ef5;
 }
@@ -25,20 +24,20 @@ a {
 
 a:hover,
 a:focus {
-   padding-left: 2px;
+   font-style: italic;
 }
 
 a:visited {
 	color: #006ef5;
 }
 
-.de {
-	font-style: italic;
-}
-
-#footer p {
+footer p {
 	margin-top: 4px;
 	margin-bottom: 4px;
+}
+
+.de {
+	font-style: italic;
 }
 
 #bullet {
@@ -48,7 +47,7 @@ a:visited {
 
 
 
-/*  obile styles: under 560 */
+/* mobile styles: under 560 */
 @media only screen and (max-width: 560px) {
 	body {
 		margin-top: 32px;
@@ -58,11 +57,11 @@ a:visited {
 		width: auto;
 	}
 
-	body #content {
+	main {
 		padding-bottom: 40px;
 	}
 
-	body #content div {
+	main section {
 		padding-bottom: 16px;
 	}
 
@@ -81,11 +80,11 @@ a:visited {
 		width: auto;
 	}
 
-	body #content {
+	main {
 		padding-bottom: 40px;
 	}
 
-	body #content div {
+	main section {
 		padding-bottom: 40px;
 	}
 }
@@ -100,11 +99,11 @@ a:visited {
 		width: auto;
 	}
 
-	body #content {
+	main {
 		padding-bottom: 40px;
 	}
 
-	body #content div {
+	main section {
 		padding-bottom: 40px;
 	}
 }
@@ -119,11 +118,11 @@ a:visited {
 		width: 680px;
 	}
 
-	body #content {
+	main {
 		padding-bottom: 40px;
 	}
 
-	body #content div {
+	main section {
 		padding-bottom: 40px;
 	}
 }
