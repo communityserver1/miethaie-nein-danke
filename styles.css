@@ -5,6 +5,7 @@ html {
 body {
 	background-color: #edece8;
 	color: #006ef5;
+	margin: 0px;
 }
 
 h1 {
@@ -36,20 +37,43 @@ footer p {
 	margin-bottom: 4px;
 }
 
+ul {
+	font-size: 1.3125rem;
+	list-style-type: none;
+	margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
+  width: 100%;
+	padding: 16px;
+  display: flex;
+	grid-column-gap: 8px;
+	justify-content: end;
+	box-sizing: border-box;
+}
+
+
 .de {
 	font-style: italic;
 }
 
-#bullet {
+.active-link:hover {
+	font-style: normal;
+}
+
+.inactive-link {
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.bullet {
 	padding-left: 12px;
 	padding-right: 12px;
 }
 
 
-
 /* mobile styles: under 560 */
 @media only screen and (max-width: 560px) {
-	body {
+	main {
 		margin-top: 32px;
 		margin-left: 8%;
 		margin-bottom: 32px;
@@ -57,12 +81,15 @@ footer p {
 		width: auto;
 	}
 
-	main {
-		padding-bottom: 40px;
-	}
-
 	main section {
 		padding-bottom: 16px;
+	}
+
+	footer {
+		margin-left: 8%;
+		margin-bottom: 32px;
+		margin-right: 8%;
+		width: auto;
 	}
 
 	h1 {
@@ -72,57 +99,66 @@ footer p {
 
 /*small tablet styles: 560-768 */
 @media only screen and (min-width: 560px) {
-	body {
-		margin-top: 64px;
+	main {
+		margin-top: 32px;
 		margin-left: 10%;
 		margin-bottom: 32px;
 		margin-right: 10%;
 		width: auto;
 	}
 
-	main {
+	main section {
 		padding-bottom: 40px;
 	}
 
-	main section {
-		padding-bottom: 40px;
+	footer {
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-bottom: 32px;
+		width: auto;
 	}
 }
 
 /*large tablet styles: 768-960 */
 @media only screen and (min-width: 768px) {
-	body {
-		margin-top: 64px;
+	main {
+		margin-top: 32px;
 		margin-left: 16%;
 		margin-bottom: 32px;
 		margin-right: 16%;
 		width: auto;
 	}
 
-	main {
+	main section {
 		padding-bottom: 40px;
 	}
 
-	main section {
-		padding-bottom: 40px;
+	footer {
+		margin-right: 16%;
+		margin-left: 16%;
+		margin-bottom: 32px;
+		width: auto;
 	}
 }
 
 /* desktop styles: 960+ */
 @media only screen and (min-width: 960px) {
-	body {
-		margin-top: 64px;
+	main {
+		margin-top: 32px;
 		margin-left: auto;
-		margin-bottom: 32px;
+		margin-bottom: 72px;
 		margin-right: auto;
 		width: 680px;
 	}
 
-	main {
+	main section {
 		padding-bottom: 40px;
 	}
 
-	main section {
-		padding-bottom: 40px;
+	footer {
+		margin-right: auto;
+		margin-left: auto;
+		margin-bottom: 32px;
+		width: 680px;
 	}
 }
